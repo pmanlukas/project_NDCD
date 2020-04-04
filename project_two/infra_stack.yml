@@ -284,8 +284,8 @@ Resources:
           systemctl start apache2.service
           cd /var/www/html
           echo "Udacity Demo Web Server Up and Running!" > index.html
-        #aws s3 cp s3://udagram-project/index.html .
-        #chown -R www-data:www-data .
+          aws s3 cp s3://udagram-pmanlukas/index.html .
+          chown -R www-data:www-data .
       ImageId: ami-0d1cd67c26f5fca19
       IamInstanceProfile: !Ref ListS3BucketsInstanceProfile
       SecurityGroups:
